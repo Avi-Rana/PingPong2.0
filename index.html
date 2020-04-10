@@ -17,9 +17,12 @@
         margin:35px;
         color:white;
     }
+    #title{
+        font-family: calibri;
+    }
     </style>
 </head>
-    <h1>Ping Pong 2.0</h1>
+    <h1 id="title">Ping Pong 2.0</h1>
         <canvas id="play-area" width="500px" height="500px"></canvas>
         <br><B>BETA</b> - New features coming soon!
     </div>
@@ -32,7 +35,7 @@
     var canvas;
     var canavsContext;
     var ballX = 500;
-    var ballY = 200;
+    var ballY = 500;
     var SpeedX = 7;
     var SpeedY = 7;
 var p1score = 0;
