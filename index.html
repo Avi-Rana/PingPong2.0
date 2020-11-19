@@ -26,7 +26,7 @@
         <canvas id="play-area" width="500px" height="500px"></canvas>
         <br><B>BETA</b> - New features coming soon!
     </div>
-    <footer><b>@Melon On</b></footer>
+    <footer><b>@Avi Rana</b></footer>
     </body>
 
 
@@ -36,8 +36,8 @@
     var canavsContext;
     var ballX = 500;
     var ballY = 500;
-    var SpeedX = 7;
-    var SpeedY = 7;
+    var SpeedX = 10;
+    var SpeedY = 10;
 var p1score = 0;
 var p2score = 0;
     var paddle1Y = 50;
@@ -123,7 +123,7 @@ p2score += 1;
 if(ballX > canvas.width){
 if(ballY > paddle2Y &&
 ballY < PaddleHeight+paddle2Y) {
-    SpeedX = -7;
+    SpeedX = -10;
     var deltaY = ballY-(paddle2Y+PaddleHeight/2);
     SpeedY = deltaY * 0.35;
 } else {
@@ -133,10 +133,10 @@ p1score += 1;
 }
 
 if(ballY > canvas.height){
-    SpeedY = -7;
+    SpeedY = -10;
 }
-if(ballY < 7){
-    SpeedY= 7;
+if(ballY < 10){
+    SpeedY= 10;
 }
 
     }
