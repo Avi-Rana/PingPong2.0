@@ -152,7 +152,7 @@ if(ballY < 7){
     function draw(){
         if(win){
             canvasContext.fillStyle = 'white';
-            canvasContext.fillText("You Win!!!!",canvas.width/2,canvas.height/2)
+            canvasContext.fillText("You Win",canvas.width/2,canvas.height/2)
                 return;
         }
         canvasContext.fillStyle ='#121212';
@@ -161,7 +161,11 @@ if(ballY < 7){
     canvasContext.beginPath();
     canvasContext.arc(ballX,ballY,5,0,Math.PI*2,true);
     canvasContext.fill();
+        canvasContext.fillStyle ='white';  canvasContext.beginPath();
+    canvasContext.arc(ballX,ballY,5,0,Math.PI*2,true);
+    canvasContext.fill();
         canvasContext.fillStyle ='white';
+        
         canvasContext.fillRect(0,paddle1Y,PaddleThickness,PaddleHeight);
         canvasContext.fillStyle ='white';
         canvasContext.fillRect(canvas.width-PaddleThickness,paddle2Y,PaddleThickness,PaddleHeight);
