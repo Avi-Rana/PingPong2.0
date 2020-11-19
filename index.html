@@ -151,13 +151,13 @@ if(ballY < 10){
 
     function draw(){
         if(win){
-            canvasContext.fillStyle = 'white';
+            canvasContext.fillStyle = 'White';
             canvasContext.fillText("You Win",canvas.width/2,canvas.height/2)
                 return;
         }
         canvasContext.fillStyle ='#121212';
         canvasContext.fillRect(0,0,canvas.width,canvas.height);
-        canvasContext.fillStyle ='#BB86FC';
+        canvasContext.fillStyle ='#32527B';
     canvasContext.beginPath();
     canvasContext.arc(ballX,ballY,5,0,Math.PI*2,true);
     canvasContext.fill();
